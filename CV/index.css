@@ -1,0 +1,246 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif; /* Updated font */
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 18%; /* Keep sidebar width */
+    background-color: #292929;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.profile img {
+    width: 100px; /* Smaller profile picture */
+    border-radius: 50%;
+    margin-bottom: 1px;
+}
+
+.profile p {
+    font-size: 0.8rem;
+}
+
+.profile h1 {
+    margin: 8px 0;
+    font-size: 1rem; /* Adjusted font size for smaller sidebar */
+}
+
+.profile h2{
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    font-size: 0.9rem; /* Smaller text for contact info */
+    color: #ff8a65;
+    text-decoration: none;
+}
+
+.contact-info p {
+    font-size: 1rem; /* Smaller text for contact info */
+    text-decoration: none;
+}
+
+.languages h3, .skills h3 {
+    font-size: 1rem; /* Smaller section titles */
+    margin-bottom: 8px;
+}
+
+.languages p{
+    font-size: 0.7rem;
+}
+
+/* Language Progress Circles */
+.circle {
+    width: 50px;
+    height: 50px;
+    background: conic-gradient(#ff8a65 var(--percentage), #292929 0); /* Conic gradient for percentage */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+#english {
+    --percentage: 360deg; /* 100% */
+}
+
+#arabic {
+    --percentage: 360deg; /* 100% */
+}
+
+#turkish {
+    --percentage: 216deg; /* 60% */
+}
+
+/* Skills Section */
+.skill {
+    margin-bottom: 8px;
+}
+
+.skill p {
+    font-size: 0.7rem; /* Smaller skill text */
+    margin-bottom: 5px;
+}
+
+/* Skills Progress Bars */
+.progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ff8a65;
+    border-radius: 5px;
+}
+
+#html-bar .progress {
+    width: 80%;
+}
+
+#css-bar .progress {
+    width: 80%;
+}
+
+#javascript-bar .progress {
+    width: 50%;
+}
+
+#angular-bar .progress {
+    width: 30%;
+}
+
+#java-bar .progress {
+    width: 20%;
+}
+
+#cpp-bar .progress {
+    width: 20%;
+}
+
+#nosql-bar .progress {
+    width: 40%;
+}
+
+#python-bar .progress {
+    width: 10%;
+}
+
+/* Padding and Margins for better alignment */
+.languages, .skills {
+    margin-top: 15px; /* Space between sections */
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 45vh; /* Slightly smaller height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2rem; /* Smaller hero title */
+}
+
+.hero-content p {
+    font-size: 0.9rem; /* Smaller paragraph */
+    margin: 8px 0;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 8px 14px; /* Reduced padding */
+    background-color: #ff8a65;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.hero-content .btn:hover {
+    background-color: #ff7043;
+}
+
+/* Projects Section */
+#projects {
+    margin-top: 20px;
+    width: 100%; /* Full width for the projects section */
+    margin-left: 0; /* Align it to the left */
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px; /* Adds space below the heading */
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+    padding-top: 10px; /* Adds padding above the project boxes */
+}
+
+.project {
+    background-color: #333;
+    padding: 20px;
+    flex: 1 1 32%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.project h3 {
+    font-size: 1.3rem; /* Smaller project titles */
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 0.85rem; /* Smaller project description */
+    margin-bottom: 10px;
+    flex-grow: 1; /* Ensure the description takes up remaining space */
+}
+
+.project .btn {
+    background-color: #ff8a65;
+    color: #fff;
+    padding: 8px 12px; /* Smaller button */
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.project .btn:hover {
+    background-color: #ff7043;
+}
